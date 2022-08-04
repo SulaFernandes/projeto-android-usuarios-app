@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UsuariosApp</string>
+    <string name="acessar">Acessar</string>
+    <string name="login">Login</string>
+    <string name="usuario">Usuário:</string>
+    <string name="senha">Senha:</string>
+    <string name="password">Senha</string>
+    <string name="email">Digite seu email</string>
+    <string name="cadastrar_usuario">Cadastrar Usuário</string>
+    <string name="nome">Nome:</string>
+    <string name="cpf">CPF:</string>
+    <string name="data_de_nascimento">Data de nascimento:</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="endereco">Endereço</string>
+    <string name="perfil">Perfil</string>
+    <string name="sair">Sair</string>
+</resources>

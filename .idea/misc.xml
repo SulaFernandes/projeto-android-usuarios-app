@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/drawable/edit_text.xml" value="0.162" />
-        <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/layout/activity_form_cadastro.xml" value="0.19" />
+        <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/drawable/ic_data_nascimento.xml" value="0.1" />
+        <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/drawable/ic_endereco.xml" value="0.1" />
+        <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/drawable/ic_nome_pessoa.xml" value="0.167" />
+        <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/layout/activity_form_cadastro.xml" value="0.22" />
         <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/layout/activity_menu.xml" value="0.22" />
         <entry key="..\:/Users/Sula/AndroidStudioProjects/UsuariosApp/app/src/main/res/menu/menu_principal.xml" value="0.21" />

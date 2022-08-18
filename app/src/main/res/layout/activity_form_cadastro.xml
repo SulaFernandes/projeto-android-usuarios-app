@@ -4,139 +4,196 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".FormCadastro">
 
-    <TextView
-        android:id="@+id/usuario_cadastro_tv"
-        android:layout_width="374dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/cadastrar_usuario"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/nome_usu_tv"
-        android:layout_width="104dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/nome"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuario_cadastro_tv" />
-
-    <EditText
-        android:id="@+id/edit_text_name"
-        android:layout_width="369dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint="Nome"
-        android:inputType="textPersonName"
-        android:paddingLeft="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_usu_tv" />
-
-    <TextView
-        android:id="@+id/cpf_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/cpf"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
-
-    <EditText
-        android:id="@+id/edit_text_cpf"
-        android:layout_width="380dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint="CPF"
-        android:inputType="textShortMessage"
-        android:paddingLeft="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpf_tv" />
-
-    <TextView
-        android:id="@+id/dt_nascimento_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/data_de_nascimento"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_cpf" />
-
-    <EditText
-        android:id="@+id/edit_text_dt_nasc"
-        android:layout_width="374dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:fontFamily="@font/roboto"
-        android:hint="Data de nascimento"
-        android:inputType="date"
-        android:paddingLeft="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dt_nascimento_tv" />
-
-    <TextView
-        android:id="@+id/endereco_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/endereco"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_dt_nasc" />
-
-    <Button
-        android:id="@+id/button_cadastrar"
+    <ImageView
+        android:id="@+id/icon_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/cadastrar"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nome"
+        app:srcCompat="@drawable/ic_nome_pessoa" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:hint="@string/nome"
+        app:layout_constraintStart_toEndOf="@id/icon_nome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cpf"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/cpf"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@id/nome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpf_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/icon_data_nascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/data_nascimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/data_nascimento"
+        app:srcCompat="@drawable/ic_data_nascimento" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/data_nascimento"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/data_de_nascimento"
+        app:layout_constraintStart_toStartOf="@+id/cpf"
+        app:layout_constraintTop_toBottomOf="@id/cpf">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/data_nascimento_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/icon_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/dados_endereco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dados_endereco"
+        app:srcCompat="@drawable/ic_endereco" />
+
+    <TextView
+        android:id="@+id/dados_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Digite o CEP e pressione ENTER"
+        app:layout_constraintStart_toStartOf="@+id/data_nascimento"
+        app:layout_constraintTop_toBottomOf="@id/data_nascimento" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cep"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/cep"
+        app:layout_constraintStart_toStartOf="@+id/dados_endereco"
+        app:layout_constraintTop_toBottomOf="@id/dados_endereco">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cep_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/rua"
+        app:layout_constraintStart_toStartOf="@+id/cep"
+        app:layout_constraintTop_toBottomOf="@id/cep"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rua_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/bairro"
+        app:layout_constraintStart_toStartOf="@+id/rua"
+        app:layout_constraintTop_toBottomOf="@id/rua"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bairro_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cidade"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/cidade"
+        app:layout_constraintStart_toStartOf="@+id/bairro"
+        app:layout_constraintTop_toBottomOf="@id/bairro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cidade_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/estado"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/estado"
+        app:layout_constraintStart_toStartOf="@+id/cidade"
+        app:layout_constraintTop_toBottomOf="@id/cidade">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/estado_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/salvar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/estado"
+        app:layout_constraintTop_toBottomOf="@id/estado" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

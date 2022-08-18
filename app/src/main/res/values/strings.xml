@@ -6,12 +6,15 @@
     <string name="senha">Senha:</string>
     <string name="password">Senha</string>
     <string name="email">Digite seu email</string>
-    <string name="cadastrar_usuario">Cadastrar Usuário</string>
-    <string name="nome">Nome:</string>
-    <string name="cpf">CPF:</string>
-    <string name="data_de_nascimento">Data de nascimento:</string>
-    <string name="cadastrar">Cadastrar</string>
-    <string name="endereco">Endereço</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="salvar">Salvar</string>
+    <string name="cep">CEP</string>
     <string name="perfil">Perfil</string>
     <string name="sair">Sair</string>
+    <string name="rua">Rua</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
 </resources>
